@@ -9,7 +9,7 @@ pipeline {
 	  stages{
 	        stage('stage1-22Q3'){
 			    steps {
-				       sh "docker kill 22Q3-httpd"
+				       sh "docker stop 22Q3-httpd"
 				       sh "docker rm 22Q3-httpd"
 				       
 				}
