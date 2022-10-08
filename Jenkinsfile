@@ -7,13 +7,13 @@ pipeline {
 		  } 
 	  }
 	  stages{
-	       /* stage('stage1-22Q3'){
+	        stage('stage1-22Q3'){
 			    steps {
 				       sh "docker kill 22Q3-httpd"
 				       sh "docker rm 22Q3-httpd"
 				       
 				}
-			} */
+			} 
 			stage('docker-stage-22Q3'){
 			      steps{
 				        
@@ -25,5 +25,4 @@ pipeline {
 	  }
 	  
 }
-
 
