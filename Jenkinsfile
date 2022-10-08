@@ -17,7 +17,7 @@ pipeline {
 			stage('docker-stage-22Q3'){
 			      steps{
 				        
-						sh "docker run --name 22Q3-httpd -itdp 8080:80 httpd"
+						sh "docker run --name 22Q3-httpd -itdp 70:80 httpd"
 				               sh "chmod -R 777 /mnt/assignmet4/22Q3/index.html"
 						sh "cd /mnt/assignmet4/22Q3 && docker cp index.html 22Q3-httpd:/usr/local/apache2/htdocs/"
 				  }
